@@ -1,6 +1,6 @@
 from flask import Flask, render_template, jsonify
 
-app = Flask(__name__)
+flask_app = Flask(__name__)
 
 JOBS = [
   {
