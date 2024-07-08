@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      New Careers
+      VaseWorks
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,7 +38,7 @@
   </head>
   <body>
     <div id="container">
-      <h1>VaseWorks</h1>
+      <h1>{{company_name}}</h1>
       <img id="banner" src= "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmxjNHA5NmxmNDZjcGU0ODV5NDVmczIwazMxaW8xY3Iycm90NWFicSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9bTjZrytydVRK/giphy.gif">
       <h2>-</h2>
       <h2>
@@ -50,8 +50,10 @@
       <h2>
         Open positions
       </h2>
-      <p class="bodytext">
-        TODO - Show jobs here
+      <p>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
       </p>
       <div>
       <button class="btn btn-secondary btn-sm"> Contact us</button>
