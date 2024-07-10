@@ -37,6 +37,7 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
     <div id="container">
       <h1>{{company_name}}</h1>
       <img id="banner" src= "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmxjNHA5NmxmNDZjcGU0ODV5NDVmczIwazMxaW8xY3Iycm90NWFicSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9bTjZrytydVRK/giphy.gif">
@@ -57,8 +58,8 @@
       </p>
       <div>
       <button class="btn btn-secondary btn-sm"> Contact us</button>
-        <p class="mt-4">Copyright 2024, VaseWorks</p>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
-</html>
+</html> 
